@@ -41,17 +41,18 @@ namespace NTierArchitectExample.DataAccess.Concrete
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var _course = _courses.Where(c=>c.Id== id).FirstOrDefault();
+            return _courses.Remove(_course);
         }
 
         public Course GetCourse(int id)
         {
-            throw new NotImplementedException();
+            return _courses.Where(c => c.Id == id).FirstOrDefault();
         }
 
         public List<Course> GetAllCourses()
         {
-            throw new NotImplementedException();
+            return _courses;
         }
     }
 }
