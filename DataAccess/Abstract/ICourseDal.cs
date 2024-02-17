@@ -7,12 +7,12 @@ using NTierArchitectExample.Entities;
 
 namespace NTierArchitectExample.DataAccess.Abstract
 {
-    public interface IInstructorDal
+    public interface ICourseDal
     {
-        public bool Add(Instructor instructor);
-        public bool Update(Instructor instructor);
+        public bool Add(Course course);
+        public bool Update(Course course);
         public bool Delete(int id);
-        public Instructor GetInstructor(int id);
-        public List<Instructor> GetAllInstructors();
+        public Course GetCourse(int id);
+        public List<Course> GetAllCourses();
     }
 }

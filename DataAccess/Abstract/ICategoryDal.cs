@@ -7,12 +7,13 @@ using NTierArchitectExample.Entities;
 
 namespace NTierArchitectExample.DataAccess.Abstract
 {
-    public interface IInstructorDal
+    public interface ICategoryDal
     {
-        public bool Add(Instructor instructor);
-        public bool Update(Instructor instructor);
+        public bool Add(Category category);
+        public bool Update(Category category);
         public bool Delete(int id);
-        public Instructor GetInstructor(int id);
-        public List<Instructor> GetAllInstructors();
+        public Category GetCategory(int id);
+        public List<Category> GetAllCategories();
+
     }
 }
