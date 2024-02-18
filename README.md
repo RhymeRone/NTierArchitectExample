@@ -1,7 +1,7 @@
 
 # N-Tier Example
 
-N-Tier Katmanlı mimarisini örnekleme amacıyla geliştirilmiştir. 
+N-Tier Katmanlı mimarisi örnekleme amacıyla geliştirilmiştir. 
 
 
 
