@@ -33,25 +33,28 @@ namespace NTierArchitectExample
                     "Java Kursu","Java 2 Aylık Bootcamp")
             );
 
+            Console.WriteLine("<-------- Eğitmenler --------->");
             foreach (var instructor in instructorManager.GetAllInstructors())
             {
-                Console.WriteLine("Eğitmen No : " + instructor.Id);
+                Console.WriteLine("\nEğitmen No : " + instructor.Id);
                 Console.WriteLine("Eğitmen Adı : "+instructor.Name);
                 Console.WriteLine("Eğitmen Yaşı : " + instructor.Age);
                 Console.WriteLine("Eğitmen Açıklaması : " + instructor.Description);
                 Console.WriteLine("Eğitmen Profil Resmi : " + instructor.ProfilePictureURL);
             }
 
+            Console.WriteLine("\n<-------- Kategoriler --------->");
             foreach (var category in categoryManager.GetAllCategories())
             {
-                Console.WriteLine("Kategori No : " + category.Id);
+                Console.WriteLine("\nKategori No : " + category.Id);
                 Console.WriteLine("Kategori Adı : " + category.Name);
                 Console.WriteLine("Kategori Açıklaması : " + category.Description);
             }
 
+            Console.WriteLine("\n<-------- Kurslar --------->");
             foreach (var course in courseManager.GetAllCourses())
             {
-                Console.WriteLine("Kurs No : " + course.Id);
+                Console.WriteLine("\nKurs No : " + course.Id);
                 Console.WriteLine("Kurs Adı : " + course.Name);
                 Console.WriteLine("Kurs Açıklaması : " + course.Description);
                 Console.WriteLine("Kurs Kategorisi : " + categoryManager.GetCategory(course.CategoryId).Name);
