@@ -34,6 +34,8 @@ namespace NTierArchitectExample.DataAccess.Concrete
             {
                 _course.Name = course.Name;
                 _course.Description = course.Description;
+                _course.CategoryId = course.CategoryId;
+                _course.InstructorId = course.InstructorId;
                 return true;
             }
             return false;
